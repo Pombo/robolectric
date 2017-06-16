@@ -15,7 +15,6 @@ import org.robolectric.RuntimeEnvironment;
 import org.robolectric.Shadows;
 import org.robolectric.TestRunners;
 import org.robolectric.annotation.Config;
-import org.robolectric.android.internal.ParallelUniverse;
 import org.robolectric.internal.SdkConfig;
 import org.robolectric.manifest.AndroidManifest;
 import org.robolectric.res.*;
@@ -147,7 +146,7 @@ public class ParallelUniverseTest {
     setUpApplicationState(c);
     assertThat(RuntimeEnvironment.getQualifiers()).contains("large-land-v23");
   }
-  
+
   @Test
   public void tearDownApplication_invokesOnTerminate() {
     RuntimeEnvironment.application = mock(Application.class);
