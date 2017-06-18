@@ -78,7 +78,6 @@ public class RobolectricTestRunnerSelfTest {
         .isEqualTo("4.4_r1");
   }
 
-
   @Test public void hamcrestMatchersDontBlowUpDuringLinking() throws Exception {
     org.junit.Assert.assertThat(true, CoreMatchers.is(true));
   }
